@@ -1,0 +1,95 @@
+<!-- project1.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 3 | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="main.html" class="back-btn">← Back</a>
+    <h1>Project 3</h1>
+  </header>
+
+  <section id="topology">
+    <img src="pj3/Full-Security-202510.PNG" alt="Topology Diagram">
+  </section>
+
+  <section id="categories">
+    <h2>카테고리</h2>
+    <div class="category-grid">
+      <!-- Category 1 -->
+      <div class="category-card">
+        <img src="pj3/dns에서 인사이드로 핑.png" alt="Category 1 Thumbnail">
+        <h3>Network Setup firewall rule setting</h3>
+        <button class="toggle-btn">열기</button>
+        <div class="category-detail">
+          <img src="pj3/telnet 허용.png" alt="Network Setup Detail">
+          <p>inside에서 outside로의 핑통신.</p>
+          <img src="pj3/dns에서 인사이드로 핑.png" alt="Network Setup Detail">
+          <p>outsied에서 dmz r1에 telnet http 가능.</p>
+          <img src="pj3/칼리에서 dns 서버로 핑가능.PNG" alt="Network Setup Detail">
+          <p>dmz 에서 inside로 ping 통신.</p>          
+          <img src="pj3/칼리에서 owasp로 핑차단.PNG" alt="Network Setup Detail">
+          <p>inside쪽 방화벽으로 telnet connect.</p>          
+          <img src="pj3/vlansetting.PNG" alt="Network Setup Detail">
+          <p>dmz쪽 방화벽으로 telnet connect.</p>
+        </div>
+      </div>
+
+      <!-- Category 2 -->
+      <div class="category-card">
+        <img src="pj3/와즈 설치완.PNG" alt="Category 2 Thumbnail">
+        <h3>Server construction</h3>
+        <button class="toggle-btn">열기</button>
+        <div class="category-detail">
+          <img src="pj3/wazuh.PNG" alt="Security Detail">
+          <p>와즈 설치 및 agent 와 연결</p>
+          <img src="pj3/와즈 설치.PNG" alt="Security Detail">
+          <p>Server 설치 완료</p>
+          <img src="pj3/와즈 설치완.PNG" alt="Security Detail">
+          <p>정상적으로 작동 되는 모습</p>
+          <img src="pj3/WAF구축.PNG" alt="Security Detail">
+          <p>WAF 구축 및 간단한 테스트</p>
+          <img src="pj3/dns서버구축lsh1023.jpg" alt="Security Detail">
+          <p>DNS서버구축후 도메인으로 접속 테스트</p>
+          <img src="pj3/goaccess.PNG" alt="Security Detail">
+          <p>goaccess cli 에서 확인 하기</p>
+          <img src="pj3/goaccessweb.PNG" alt="Security Detail">
+          <p>goaccess 웹으로 실시간 확인 하기</p>
+          <img src="pj3/NMS-Zabbix.PNG" alt="Security Detail">
+          <p>zabbix 구축</p>
+          <img src="pj3/PMM서버구축.PNG" alt="Security Detail">
+          <p>PMM 서버 구축 및 DB연동 완료</p>
+          <img src="pj3/suricata설치및 동작.PNG" alt="Security Detail">
+          <p>Suricata 설치 및 간단한 룰작성후 테스트 해보기</p>
+        </div>
+      </div>
+
+      <!-- Category 3 -->
+      <div class="category-card">
+        <img src="pj3/4star.PNG" alt="Category 3 Thumbnail">
+        <h3>OWASP Juiceshop</h3>
+        <button class="toggle-btn">열기</button>
+        <div class="category-detail">
+          <img src="pj3/2star.PNG" alt="Monitoring Detail">
+          <p>OWASP Juiceshop 2star문제 풀어 보기</p>
+          <img src="pj3/3star.PNG" alt="Monitoring Detail">
+          <p>OWASP Juiceshop 3star문제 풀어 보기</p>
+          <img src="pj3/4star.PNG" alt="Monitoring Detail">
+          <p>OWASP Juiceshop 4star문제 풀어 보기</p>          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 이석현 | Project 3</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

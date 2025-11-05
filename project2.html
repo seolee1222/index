@@ -1,0 +1,134 @@
+<!-- project2.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Project2 | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="main.html" class="back-btn">← Back</a>
+    <h1>Project2</h1>
+  </header>
+
+  <section id="topology">
+    <img src="pj2/project.PNG" alt="Topology Diagram">
+  </section>
+
+  <section id="categories">
+    <h2>카테고리</h2>
+    <div class="category-grid">
+      <!-- Category 1 -->
+      <div class="category-card">
+        <img src="pj2/vlan 설정.PNG" alt="Category 1 Thumbnail">
+        <h3>Network Setup firewall rule setting</h3>
+        <button class="toggle-btn">열기</button>
+        <div class="category-detail">
+          <img src="pj2/vlan 설정.PNG" alt="Network Setup Detail">
+          <p>vlan 설정 토폴로지 형식 및 vlan 대역별 이름.</p>
+          <img src="pj2/vlan설정.PNG" alt="Network Setup Detail">
+          <p>ESW 와 라우터 에서의 설정.</p>
+          <img src="pj2/vlan 10,20,30설정완료후 10에서 20,30통신.PNG" alt="Network Setup Detail">
+          <p>vlan 설정후 통신상태 확인.</p>          
+          <img src="pj2/인사이드에서 텔넷.PNG" alt="Network Setup Detail">
+          <p>방화벽 룰 설정 및 인사이드에서 텔넷 가능확인.</p>          
+          <img src="pj2/ftp접속 불가능.PNG" alt="Network Setup Detail">
+          <p>방화벽으로 ftp접속 불가능하게 설정후 테스트.</p>
+          <img src="pj2/http 접속가능.PNG" alt="Network Setup Detail">
+          <p>http 설정및 포트 열기 접속가능 한지 확인.</p>
+          <img src="pj2/https접속가능.PNG" alt="Network Setup Detail">
+          <p>https 접속할수 있게끔 설정후 접속 가능 확인.</p>
+          <img src="pj2/r2 r4 로ssh 접속가능.PNG" alt="Network Setup Detail">
+          <p>r2 -> r4 로 ssh접속할수있게끔 설정</p>
+          <img src="pj2/pmm client와 R3 통신가능.PNG" alt="Network Setup Detail">
+          <p>PMM client와 R3 라우터간의 통신설정 및 확인</p>         
+        </div>
+      </div>
+
+      <!-- Category 2 -->
+      <div class="category-card">
+        <img src="pj2/pmm 서버 구축.PNG" alt="Category 2 Thumbnail">
+        <h3>Server construction</h3>
+        <button class="toggle-btn">열기</button>
+        <div class="category-detail">
+          <img src="pj2/pmm 서버 구축.PNG" alt="Security Detail">
+          <p>PMM 서버 구축 및 데이터베이스 연결 후 설정확인</p>
+          <img src="pj2/ftp 서버 구축 파일질라 cmd통신 성공.PNG" alt="Security Detail">
+          <p>ftp서버 구축 후 파일질라와 window로 접근 가능 설정 후 확인</p>
+          <img src="pj2/log analyzer.PNG" alt="Security Detail">
+          <p>log analyzer 구축후 데이터베이스 연결 후 클라이언트 서버에서 http재부팅 후 log올라오는지 확인</p>
+          <img src="pj2/DNS 서버 구축하기.PNG" alt="Security Detail">
+          <p>DNS서버 구축 후 도메인으로 접근 했을때 정상적으로 페이지 구동되는지 확인</p>
+          <img src="pj2/smbshare 서버 구축 및 활성화.PNG" alt="Security Detail">
+          <p>Samba 서비스 서버 구축후 테스트</p>                                      
+          <img src="pj2/nfs 구축.PNG" alt="Security Detail">
+          <p>NFS 서버 구축 후 테스트</p>
+          <img src="pj2/ossec 연결 가능.PNG" alt="Security Detail">
+          <p>OSSEC 서버 및 클라이언트 구축후 연결 확인</p>
+          <img src="pj2/zabbix 활성화.PNG" alt="Security Detail">
+          <p>Zabbix 서버 및 클라이언트 구축후 연결확인</p>
+        </div>
+      </div>
+
+      <!-- Category 3 -->
+      <div class="category-card">
+        <img src="pj2/wtmp btmp.PNG" alt="Category 3 Thumbnail">
+        <h3>System configuration</h3>
+        <button class="toggle-btn">열기</button>
+        <div class="category-detail">
+          <img src="pj2/wtmp btmp.PNG" alt="Monitoring Detail">
+          <p>wtmp,btmp 파일 위치 확인하기</p>
+          <img src="pj2/bof 발생시키기.PNG" alt="Monitoring Detail">
+          <p>buffer overflow 발생시키기 실습</p>
+          <img src="pj2/비밀번호 90일.PNG" alt="Monitoring Detail">
+          <p>password 90일 만료 설정 하기</p>          
+          <img src="pj2/uid bit설정 권한상승.PNG" alt="Monitoring Detail">
+          <p>set uid bit 파일 설정하고 uidbit 파일을 통해 권한상승 실습</p>          
+          <img src="pj2/비밀번호 변경.PNG" alt="Monitoring Detail">
+          <p>password 특수문자 숫자 대문자 소문자 등등의 규칙 정하기</p>          
+          <img src="pj2/스티키 비트 설정.PNG" alt="Monitoring Detail">
+          <p>sticky bit 설정 하기</p>          
+        </div>
+      </div>
+      
+      <!-- Category 4 -->
+      <div class="category-card">
+        <img src="pj2/db.PNG" alt="Category 3 Thumbnail">
+        <h3>Database - Maria DB</h3>
+        <button class="toggle-btn">열기</button>
+        <div class="category-detail">
+          <img src="pj2/DB dev생성.PNG" alt="Monitoring Detail">
+          <p>DB dev 생성하기</p>
+          <img src="pj2/DB skillcode생성.PNG" alt="Monitoring Detail">
+          <p>skillcode생성</p>       
+          <img src="pj2/DB 유저 권한 주기.PNG" alt="Monitoring Detail">
+          <p>DB 유저 에게 권한 부여</p>          
+          <img src="pj2/frontend skill조회.PNG" alt="Monitoring Detail">
+          <p>DB 명령어를 통해 frontend skill 조회하기</p>          
+        </div>
+      </div>
+      <!-- Category 5 -->
+      <div class="category-card">
+        <img src="pj2/venus root플래그.PNG" alt="Category 3 Thumbnail">
+        <h3>CTF VENUS</h3>
+        <button class="toggle-btn">열기</button>
+        <div class="category-detail">
+          <img src="pj2/ctf userflag.PNG" alt="Monitoring Detail">
+          <p>CTF userflag 출력</p>
+          <img src="pj2/venus root플래그.PNG" alt="Monitoring Detail">
+          <p>Root 플래그 출력</p>        
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 이석현 | project2</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

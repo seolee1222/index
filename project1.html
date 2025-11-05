@@ -1,0 +1,85 @@
+<!-- project1.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 1 | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="main.html" class="back-btn">← Back</a>
+    <h1>Project 1</h1>
+  </header>
+
+  <section id="topology">
+    <img src="pj1/networksecurity-portfolio.png" alt="Topology Diagram">
+  </section>
+
+  <section id="categories">
+    <h2>카테고리</h2>
+    <div class="category-grid">
+      <!-- Category 1 -->
+      <div class="category-card">
+        <img src="pj1/fire wall rule in to out ping.PNG" alt="Category 1 Thumbnail">
+        <h3>Network Setup firewall rule setting</h3>
+        <button class="toggle-btn">열기</button>
+        <div class="category-detail">
+          <img src="pj1/fire wall rule in to out ping.PNG" alt="Network Setup Detail">
+          <p>inside에서 outside로의 핑통신.</p>
+          <img src="pj1/fire wall rule out dmz r1 telnet http.PNG" alt="Network Setup Detail">
+          <p>outsied에서 dmz r1에 telnet http 가능.</p>
+          <img src="pj1/fire wall ruledmz in ping.PNG" alt="Network Setup Detail">
+          <p>dmz 에서 inside로 ping 통신.</p>          
+          <img src="pj1/firewall rule inside telnet connect.PNG" alt="Network Setup Detail">
+          <p>inside쪽 방화벽으로 telnet connect.</p>          
+          <img src="pj1/firewall rule telnet dmz access.PNG" alt="Network Setup Detail">
+          <p>dmz쪽 방화벽으로 telnet connect.</p>
+        </div>
+      </div>
+
+      <!-- Category 2 -->
+      <div class="category-card">
+        <img src="pj1/centos7 to window ping.PNG" alt="Category 2 Thumbnail">
+        <h3>IDS/IPS rule setting test</h3>
+        <button class="toggle-btn">열기</button>
+        <div class="category-detail">
+          <img src="pj1/centos7 to window ping.PNG" alt="Security Detail">
+          <p>snort3 로키에서 윈도우로의 ping 감지</p>
+          <img src="pj1/hids command injection.PNG" alt="Security Detail">
+          <p>command injection 감지</p>
+          <img src="pj1/ping ossec snort3.PNG" alt="Security Detail">
+          <p>ossec 에서 snort3 으로 ping 감지</p>
+          <img src="pj1/SYN Flag Scanning.PNG" alt="Security Detail">
+          <p>SYN FLAG 스캔 감지</p>
+          <img src="pj1/rand attack.PNG" alt="Security Detail">
+          <p>spoofing ddos어택감지</p>
+        </div>
+      </div>
+
+      <!-- Category 3 -->
+      <div class="category-card">
+        <img src="pj1/pfsense.png" alt="Category 3 Thumbnail">
+        <h3>Sever construction</h3>
+        <button class="toggle-btn">열기</button>
+        <div class="category-detail">
+          <img src="pj1/pfsense.png" alt="Monitoring Detail">
+          <p>pfsense 구축 및 설정</p>
+          <img src="pj1/zabbix.png" alt="Monitoring Detail">
+          <p>zabbix 설치 및 구축</p>
+          <img src="pj1/vpn설정.PNG" alt="Monitoring Detail">
+          <p>vpn 설정 및 구축하기</p>          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 이석현 | Project 1</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
