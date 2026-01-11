@@ -190,7 +190,26 @@ footer {
   transform: scale(0.97);
   opacity: 0.8;
 }
+@media (max-width: 768px) {
+  .slide-card {
+    width: 200px;
+    min-width: 200px;
+    height: 130px;
+    margin: 0 15px;
+    font-size: 1.1rem;
+  }
+}
 
+/* 모바일 */
+@media (max-width: 480px) {
+  .slide-card {
+    width: 160px;
+    min-width: 160px;
+    height: 100px;
+    margin: 0 10px;
+    font-size: 1rem;
+  }
+}
 @keyframes scroll-slide {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
@@ -470,6 +489,7 @@ header h1 {
 .section-header.active::after {
   content: "︿";
 }
+
 
 
 
