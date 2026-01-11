@@ -164,8 +164,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 360px;
-  min-width: 360px;
+  width: 250px;
+  min-width: 250px;
   height: 150px;
   margin: 0 20px;
   background-color: #141414;
@@ -471,4 +471,5 @@ header h1 {
 .section-header.active::after {
   content: "︿";
 }
+
 
