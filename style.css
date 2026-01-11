@@ -153,7 +153,6 @@ footer {
 
 .slider-track {
   display: flex;
-  width: calc(400px * 6);
   animation: scroll-slide 18s linear infinite;
 }
 
@@ -166,6 +165,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 360px;
+  min-width: 360px;
   height: 150px;
   margin: 0 20px;
   background-color: #141414;
@@ -178,6 +178,7 @@ footer {
   letter-spacing: 1px;
   text-decoration: none;
   transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+  flex-shrink: 0;
 }
 
 .slide-card:hover {
@@ -470,3 +471,4 @@ header h1 {
 .section-header.active::after {
   content: "︿";
 }
+
